@@ -1,0 +1,106 @@
+/*
+yo i suck at making things look pretty lol, thanks for looking at it though
+i hope the formatting isnt too weird for you, the reader
+generally stuff that's at the top of the screen is defined first
+or it's more important than the rest
+https://coolors.co/292f36-ece2d0-d34e24-00c2d1-888098
+*/
+
+html, body{
+font-family:sans-serif;
+height:1000px;
+margin:0;
+background-color: #888098;
+}
+
+header{
+position: sticky;
+top:0;
+left:0;
+background-color:#292F36;
+height:4%;
+width:100%;
+font-size: 20px;
+}
+
+header div, footer div{
+border: 3px solid #545358;
+background-color: #2a3036;
+border-radius: 20px;
+color: #D34E24;
+margin-top:5px;
+margin-left:15px;
+margin-right:15px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+
+div#hdrleft{
+float:left;
+}
+
+div#hdrright{
+float:right;
+}
+
+main{
+padding:10px;
+height:92%;
+}
+
+main div{
+margin:10px;
+padding-top: 1px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 1px;
+background-color: rgba(221, 219, 216, 75%);
+border-radius: 12px;
+}
+
+a{
+text-decoration: underline;
+color:#00C2D1
+}
+
+ul#bene li{
+font-size: 20px;
+}
+
+ul#bene li:nth-child(1){
+list-style-image: url(img/ball.webp);
+}
+
+li#lum{
+background: linear-gradient(black 35%, #13F 55%, black 75%);
+background-clip: border-box;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 1px #13F;
+}
+
+footer{
+background-color:#292F36;
+height:4%;
+width:100%;
+font-size: 20px;
+padding-top:5px;
+}
+
+/*SCROLLBAR*/
+html::-webkit-scrollbar {
+width: 10px;
+}
+   
+html::-webkit-scrollbar-track {
+background: #888098;
+border: 2px solid #ECE2D0;
+border-radius:12px;
+}
+   
+html::-webkit-scrollbar-thumb {
+background: #545358;
+border: 1px solid #ECE2D0;
+border-radius: 12px;
+}
