@@ -4,7 +4,7 @@
 }
 
 html{
-height: fit-content;
+height: 1400px;
 font-family: Verdana;
 scroll-behavior: smooth;
 }
@@ -28,6 +28,11 @@ color: white;
 width: 90%;
 border: 0px solid;
 border-radius: 12px;
+padding:10px;
+}
+
+table{
+margin: auto;
 }
 
 table.potion-links{
@@ -54,7 +59,6 @@ animation-duration: 0.5s;
 }
 
 table.stims{
-margin: auto;
 margin-top: 8px;
 background-color: gray;
 border: 0px;
@@ -64,6 +68,9 @@ border-collapse: collapse
 
 table.stims td:first-child{
 border-right: 1px solid white;
+}
+
+table.stims td{
 padding: 4px;
 }
 
@@ -92,6 +99,8 @@ width: 100%;
 }
 
 section{
+height: 300px;
+width: 90%;
 margin: 12px;
 border: 0px solid;
 border-bottom:1px solid snow;
@@ -102,6 +111,31 @@ section:target{
 background-color:rgb(100,100,100);
 animation-name: 'highlight';
 animation-duration: 1s;
+}
+
+div.potion-desc{
+float: left;
+width:60%;
+}
+
+div.potion-stats{
+float:left;
+width:20%;
+text-align: center;
+}
+
+div.potion-stats td, div.potion-stats th{
+padding: 6px;
+}
+
+div.potion-img{
+float:right;
+}
+
+div.potion-img img{
+max-height: 200px;
+max-width: 200px;
+margin-bottom: 12px;
 }
 
 div#credits{

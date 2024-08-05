@@ -16,7 +16,7 @@
     <main>
         <table class="potion-links">
             <tr>
-                <th>Positive</th>
+                <th>Helpful</th>
                 <td><a href='#goldsight'><span></span>Goldsight</a></td>
                 <td><a href='#haste'><span></span>Haste</a></td>
                 <td><a href='#healing'><span></span>Healing</a></td>
@@ -27,25 +27,22 @@
                 <td><a href='#undying'><span></span>Undying</a></td>
             </tr>
             <tr>
-                <th>Negative</th>
+                <th>Harmful</th>
                 <td><a href='#burning'><span></span>Burning</a></td>
                 <td><a href='#freezing'><span></span>Freezing</a></td>
                 <td><a href='#harming'><span></span>Harming</a></td>
+                <td><a href='#nullify'><span></span>Nullify</a></td>
                 <td><a href='#slowness'><span></span>Slowness</a></td>
                 <td><a href='#sparkle'><span></span>Sparkle</a></td>
                 <td><a href='#weakness'><span></span>Weakness</a></td>
             </tr>
-            <tr>
-                <th>Nullify</th>
-                <td><a href='#nullify'><span></span>Nullify</a></td>
-            </tr>
         </table>
         <div id='guide'>
-            <h1>How do i start brewing?</h1>
+            <h1>How do I start brewing?</h1>
             <p>Before you can get a potion, you need to charge your alchemy kit with stims</p>
             <p>Stims give differing amounts of charge. The 'stronger' a stim is, the more it'll give<br>
-                <sub>note: there currently is a bug where the first stim added gives 1% less visually. (unsure about
-                    gameplay effect)</sub>
+                <sub>note: there currently is a bug where the first stim added gives 1% less charge than it's supposed
+                    to</sub>
             </p>
             Table of stim charge values:<br>
             <table class='stims'>
@@ -82,90 +79,368 @@
                     <td>25%</td>
                 </tr>
             </table>
-            <h1>How do i get a type of potion?</h1>
-            <p>Each button you press adds a certain score value</p>
+            <h1>How do I get a certain type of potion?</h1>
+            <p>Each button you press adds a score value</p>
             <img src="assets/key-scores.png">
             <p><b>Button press order has no significance</b><br><sub>e.g AWA, AAW, WAA all result in the same potion
-                    (with a total score of 5, which results in a harming potion)</sub></p>
-            <p>Depending on the amount of score, your potion will be a different type</p>
+                    (with a total score of 5, which is a harming potion)</sub></p>
+            <p>Depending on the total amount of score, your potion will be a different type</p>
             <p>All types are listed below, along with their required score values and effects</p>
-            <h1>How to get a better potency?</h1>
-            tbd
         </div>
         <div id="potions">
             For reference:
             High potency - values above 80%
             <section class='potion' id='stamina'>
                 <h2>3 | Stamina</h2>
-                <p>Restores a flat amount of stamina, this can go over your maximum amount ONLY if used while not at
+                <div class='potion-desc'>
+                    Restores a flat amount of stamina, this can go over your maximum amount ONLY if used while not at
                     your maximum.
-                    At high potencies this is typically around ~140 stamina.
-                </p>
+                    At high potencies this is typically around ~140 stamina.</div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>?</td>
+                            <td>N/A</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/stamina.png'></div>
             </section>
             <section class='potion' id='healing'>
                 <h2>4 | Healing</h2>
-                <p>Regenerates the drinker's health, and applies regeneration. Scales greatly with potency. Does not
-                    heal broken
-                    bones</p>
+                <div class='potion-desc'>
+                    Regenerates the drinker's health, and applies regeneration for a short duration. Initial healing
+                    scales greatly with
+                    potency (regen untested). Does not heal broken bones
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>?</td>
+                            <td>N/A</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/healing.png'></div>
             </section>
             <section class='potion' id='harming'>
                 <h2>5 | Harming</h2>
-                <p>Creates an instant burst of damage around the flask when thrown. Does not linger. Damage highly
-                    comparable to an impact grenade</p>
+                <div class='potion-desc'>
+                    Creates a burst of damage around the flask when thrown. Does not linger. Damage is extremely high
+                    <pre>
+                    94% harming
+                    248 damage
+                    88% harming
+                    170 damage
+                    88% harming
+                    146 damage
+                </pre>
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Throwable</td>
+                            <td>?</td>
+                            <td>N/A</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/harming.png'></div>
             </section>
             <section class='potion' id='weakness'>
                 <h2>6 | Weakness</h2>
-                <p>Leaves a pool of liquid upon shattering that weakens enemy damage greatly (for an unknown length of
-                    time) (along with possibly reducing their defense?)</p>
+                <div class='potion-desc'>
+                    <p>Leaves a pool of liquid upon shattering that weakens enemy damage greatly (for an unknown length
+                        of
+                        time) (along with possibly reducing their defense?)</p>
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Throwable</td>
+                            <td>?</td>
+                            <td>?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/weakness.png'></div>
             </section>
             <section class='potion' id='burning'>
                 <h2>7 | Burning</h2>
-                <p>Leaves a pool of liquid upon shattering that sets enemies on fire. Does not hurt allies
-                </p>
+                <div class='potion-desc'>
+                    Leaves a pool of liquid upon shattering that sets enemies on fire. Cools off after a short period.
+                    Does not hurt allies
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Throwable</td>
+                            <td>?</td>
+                            <td>? - 10s</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/burning.png'></div>
             </section>
             <section class='potion' id='steelskin'>
                 <h2>8 | Steelskin</h2>
-                <p>Untested.</p>
+                <div class='potion-desc'>
+                    Gives a defense boost (?%) for a duration (length?).</div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/steelskin.png'></div>
             </section>
             <section class='potion' id='goldsight'>
                 <h2>9 | Goldsight</h2>
-                <p>Temporarily marks items/objects/generators in a large radius with a yellow indicator when drank.</p>
+                <div class='potion-desc'>
+                    <p>Temporarily marks items/objects/generators in a large radius through walls with a yellow diamond
+                        when
+                        drank.</p>
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>Unaffected?</td>
+                            <td>? - 25s</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/goldsight.png'></div>
             </section>
             <section class='potion' id='haste'>
                 <h2>10 | Haste</h2>
-                <p>Untested.</p>
+                <div class='potion-desc'>
+                    Untested.
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/haste.png'></div>
+
             </section>
             <section class='potion' id='sparkle'>
                 <h2>11 | Sparkle</h2>
-                <p>Untested.</p>
+                <div class='potion-desc'>
+                    Untested.
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Throwable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/sparkle.png'></div>
             </section>
             <section class='potion' id='slowness'>
                 <h2>12 | Slowness</h2>
-                <p>Untested.</p>
+                <div class='potion-desc'>
+                    Untested.
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Throwable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/slowness.png'></div>
             </section>
             <section class='potion' id='neutriliagen'>
                 <h2>13 | Neutriliagen</h2>
-                <p>Lowers your infection greatly upon drinking. (1:1 Potency to infection removed)</p>
+                <div class='potion-desc'>
+                    Lowers your infection greatly upon drinking (1% Infection removed for each 1% of Potency).
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>1% per potency</td>
+                            <td>N/A</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/neutriliagen.png'></div>
             </section>
             <section class='potion' id='rage'>
                 <h2>14 | Rage</h2>
-                <p>Untested.</p>
+                <div class='potion-desc'>
+                    Untested.
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/rage.png'></div>
             </section>
             <section class='potion' id='freezing'>
                 <h2>15 | Freezing</h2>
-                <p>Untested.</p>
+                <div class='potion-desc'>
+                    Untested.
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Throwable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/freezing.png'></div>
             </section>
             <section class='potion' id='undying'>
                 <h2>16 | Undying</h2>
-                <p>Untested.</p>
+                <div class='potion-desc'>
+                    Untested.
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/undying.png'></div>
             </section>
             <section class='potion' id='nullify'>
                 <h2>17 | Nullify</h2>
-                <p>it's throwable</p>
+                <div class='potion-desc'>
+                    it's throwable
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Throwable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/nullify.png'></div>
             </section>
             <section class='potion' id='silence'>
                 <h2>18 | Silence</h2>
-                <p>Untested.</p>
+                <div class='potion-desc'>
+                    Untested.
+                </div>
+                <div class='potion-stats'>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Strength</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Drinkable</td>
+                            <td>?</td>
+                            <td>? - ?</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='potion-img'><img src='assets/silence.png'></div>
             </section>
         </div>
         <div id='credits'>

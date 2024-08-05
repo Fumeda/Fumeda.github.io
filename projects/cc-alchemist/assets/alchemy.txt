@@ -38,9 +38,9 @@ hope 75%
 94% harming
 248 damage
 88% harming
-170 
+170 damage
 88% harming
-146
+146 damage
 
 66% weakness
 no effect?
