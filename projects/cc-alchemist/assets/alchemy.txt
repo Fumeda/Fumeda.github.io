@@ -1,0 +1,349 @@
+first stim to get used gives 1% less???
+
+stim charge
+h14b 29%
+h14b 30%
+h14b 30%
+neutriliagen 35%
+neutriliagen 35%
+adren 25%
+adren 25%
+al27 35%
+al27 35% 
+necro 50%
+necro 50%
+confidence 65%
+kjb 30%
+hope 75%
+
+
+90% slow
+87% damage
+22% HP LEFT on sickler
+
+83% potency stamina
+0 -> 142
+18% potency stamina
+110 -> 110
+84% potency stamina
+0 STARTED REGEN -> 150
+>85% potency stamina 
+~80 -> 235
+
+10% potency healing
+39 -> 96 + regen -> 109 
+49% potency healing
+19 -> 130 FULL
+
+94% harming
+248 damage
+88% harming
+170 
+88% harming
+146
+
+66% weakness
+no effect?
+
+57% neutriliagen
+75% -> 17% 
+
+impact
+220 regular guy
+173 screamer
+----~ Positive ~----
+Healing - Full health
+Stamina
+Steelskin
+Goldsight - Reveals generators/objects/items with the same yellow indicator (triangle i believe?)
+Haste
+Rage
+Neutriliagen - Removes infection based on potency (1:1?)
+Undying
+
+----~ Negative ~----
+Weakness
+Burning - Pool of burning liquid, safe for allies, cools after a while.
+Harming
+Sparkle
+Slowness
+Freezing 
+
+----~ Whatever the fuck nullify is ~----
+Nullify
+
+SCORE list
+w 1
+a 2
+q 3
+s 4
+e 5 
+d 6
+
+if SCORE == 3 then
+        SelectedPotion = "Stamina Potion" --
+    end
+    if SCORE == 4 then
+        SelectedPotion = "Healing Potion" --
+    end
+    if SCORE == 5 then
+        SelectedPotion = "Harming Potion" --
+    end
+    if SCORE == 6 then
+        SelectedPotion = "Weakness Potion" --
+    end
+    if SCORE == 7 then
+        SelectedPotion = "Burning Potion" --
+    end
+    if SCORE == 8 then
+        SelectedPotion = "Steelskin Potion" --
+    end
+    if SCORE == 9 then
+        SelectedPotion = "Goldsight Potion" --
+    end
+    if SCORE == 10 then
+        SelectedPotion = "Haste Potion" --
+    end
+    if SCORE == 11 then
+        SelectedPotion = "Sparkle Potion" --
+    end
+    if SCORE == 12 then
+        SelectedPotion = "Slowness Potion" --
+    end
+    if SCORE == 13 then
+        SelectedPotion = "Neutriliagen Potion" --
+    end
+    if SCORE == 14 then
+        SelectedPotion = "Rage Potion" --
+    end
+    if SCORE == 15 then
+        SelectedPotion = "Freezing Potion" --
+    end
+    if SCORE == 16 then
+        SelectedPotion = "Undying Potion" --
+    end
+    if SCORE == 17 then
+        SelectedPotion = "Nullifier Potion" --
+    end
+    if SCORE == 18 then
+        SelectedPotion = "Silence Potion" --
+    end
+
+
+
+www - stamina 
+wwa - healing
+wws - weakness
+wwd - steelskin
+wwe - burning
+wwq - harming
+waw - healing
+waa - harming
+was - burning
+wad - goldsight
+wae - steelskin
+waq - weakness
+wsw - weakness
+wsa - burning
+wss - goldsight
+wsd - sparkle
+wse - haste
+wsq - steelskin
+wdw - steelskin
+wda - goldsight
+wds - sparkle
+wdd - neutriliagen
+wde - slowness
+wdq - haste
+wew - burning
+wea - steelskin
+wes - haste
+wed - slowness
+wee - sparkle
+weq - goldsight
+wqw - harming
+wqa - weakness
+wqs - steelskin
+wqd - haste
+wqe - goldsight
+wqq - burning
+aww - healing
+awa - harming
+aws - burning
+awd - goldsight
+awe - steelskin
+awq - weakness
+aaw - harming
+aaa - weakness
+aas - steelskin
+aad - haste
+aae - goldsight
+aaq - burning
+asw - burning
+asa - steelskin
+ass - haste
+asd - slowness
+ase - sparkle
+asq - goldsight
+adw - goldsight
+ada - haste
+ads - slowness
+add - rage
+ade - neutriliagen
+adq - sparkle
+aew - steelskin
+aea - goldsight
+aes - sparkle
+aed - neutriliagen
+aee - slowness
+aeq - haste
+aqw - weakness
+aqa - burning
+aqs - goldsight
+aqd - sparkle
+aqe - haste
+aqq - steelskin
+sww - weakness
+swa - burning
+sws - goldsight
+swd - sparkle
+swe - haste
+swq - steelskin
+saw - burning
+saa - steelskin
+sas - haste
+sad - slowness
+sae - sparkle
+saq - goldsight
+ssw - goldsight
+ssa - haste
+sss - slowness
+ssd - rage
+sse - neutriliagen
+ssq - sparkle
+sdw - sparkle
+sda - slowness
+sds - rage
+sdd - undying
+sde - freezing
+sdq - neutriliagen
+sew - haste
+sea - sparkle
+ses - neutriliagen
+sed - freezing
+see - rage
+seq - slowness
+sqw - steelskin
+sqa - goldsight
+sqs - sparkle
+sqd - neutriliagen
+sqe - slowness
+sqq - haste
+dww - steelskin
+dwa - goldsight
+dws - sparkle
+dwd - neutriliagen
+dwe - slowness
+dwq - haste
+daw - goldsight
+daa - haste
+das - slowness
+dad - rage
+dae - neutriliagen
+daq - sparkle
+dsw - sparkle
+dsa - slowness
+dss - rage
+dsd - undying
+dse - freezing
+dsq - neutriliagen
+ddw - neutriliagen
+dda - rage
+dds - undying
+ddd - silence
+dde - nullifier
+ddq - freezing
+dew - slowness
+dea - neutriliagen
+des - freezing
+ded - nullifier
+dee - undying
+deq - rage
+dqw - haste
+dqa - sparkle
+dqs - neutriliagen
+dqd - freezing
+dqe - rage
+dqq - slowness
+eww - burning
+ewa - steelskin
+ews - haste
+ewd - slowness
+ewe - sparkle
+ewq - goldsight
+eaw - steelskin
+eaa - goldsight
+eas - sparkle
+ead - neutriliagen
+eae - slowness
+eaq - haste
+esw - haste
+esa - sparkle
+ess - neutriliagen
+esd - freezing
+ese - rage
+esq - slowness
+edw - slowness
+eda - neutriliagen
+eds - freezing
+edd - nullifier
+ede - undying
+edq - rage
+eew - sparkle
+eea - slowness
+ees - rage
+eed - undying
+eee - freezing
+eeq - neutriliagen
+eqw - goldsight
+eqa - haste
+eqs - slowness
+eqd - rage
+eqe - neutriliagen
+eqq - sparkle
+qww - harming
+qwa - weakness
+qws - steelskin
+qwd - haste
+qwe - goldsight
+qwq - burning
+qaw - weakness
+qaa - burning
+qas - goldsight
+qad - sparkle
+qae - haste
+qaq - steelskin
+qsw - steelskin
+qsa - goldsight
+qss - sparkle
+qsd - neutriliagen
+qse - slowness
+qsq - haste
+qdw - haste
+qda - sparkle
+qds - neutriliagen
+qdd - freezing
+qde - rage
+qdq - slowness
+qew - goldsight
+qea - haste
+qes - slowness
+qed - rage
+qee - neutriliagen
+qeq - sparkle
+qqw - burning
+qqa - steelskin
+qqs - haste
+qqd - slowness
+qqe - sparkle
+qqq - goldsight
