@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alchemy Table</title>
+    <link rel="shortcut icon" href="assets/alchemy.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        ooo spoooky potions
+    </header>
+    <main>
+        <table class="potion-links">
+            <tr>
+                <th>Positive</th>
+                <td><a href='#goldsight'><span></span>Goldsight</a></td>
+                <td><a href='#haste'><span></span>Haste</a></td>
+                <td><a href='#healing'><span></span>Healing</a></td>
+                <td><a href='#neutriliagen'><span></span>Neutriliagen</a></td>
+                <td><a href='#rage'><span></span>Rage</a></td>
+                <td><a href='#stamina'><span></span>Stamina</a></td>
+                <td><a href='#steelskin'><span></span>Steelskin</a></td>
+                <td><a href='#undying'><span></span>Undying</a></td>
+            </tr>
+            <tr>
+                <th>Negative</th>
+                <td><a href='#burning'><span></span>Burning</a></td>
+                <td><a href='#freezing'><span></span>Freezing</a></td>
+                <td><a href='#harming'><span></span>Harming</a></td>
+                <td><a href='#slowness'><span></span>Slowness</a></td>
+                <td><a href='#sparkle'><span></span>Sparkle</a></td>
+                <td><a href='#weakness'><span></span>Weakness</a></td>
+            </tr>
+            <tr>
+                <th>Nullify</th>
+                <td><a href='#nullify'><span></span>Nullify</a></td>
+            </tr>
+        </table>
+        <div id='guide'>
+            <h1>How do i start brewing?</h1>
+            <p>Before you can get a potion, you need to charge your alchemy kit with stims</p>
+            <p>Stims give differing amounts of charge. The 'stronger' a stim is, the more it'll give<br>
+                <sub>note: there currently is a bug where the first stim added gives 1% less visually. (unsure about
+                    gameplay effect)</sub>
+            </p>
+            Table of stim charge values:<br>
+            <table class='stims'>
+                <tr>
+                    <td>Hope</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>Confidence</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>Necro</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Neutriliagen</td>
+                    <td>35%</td>
+                </tr>
+                <tr>
+                    <td>AL27-Q9</td>
+                    <td>35%</td>
+                </tr>
+                <tr>
+                    <td>K3JB-4E</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>H14-B</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>Adrenaline</td>
+                    <td>25%</td>
+                </tr>
+            </table>
+            <h1>How do i get a type of potion?</h1>
+            <p>Each button you press adds a certain score value</p>
+            <img src="assets/key-scores.png">
+            <p><b>Button press order has no significance</b><br><sub>e.g AWA, AAW, WAA all result in the same potion
+                    (with a total score of 5, which results in a harming potion)</sub></p>
+            <p>Depending on the amount of score, your potion will be a different type</p>
+            <p>All types are listed below, along with their required score values and effects</p>
+            <h1>How to get a better potency?</h1>
+            tbd
+        </div>
+        <div id="potions">
+            For reference:
+            High potency - values above 80%
+            <section class='potion' id='stamina'>
+                <h2>3 | Stamina</h2>
+                <p>Restores a flat amount of stamina, this can go over your maximum amount ONLY if used while not at
+                    your maximum.
+                    At high potencies this is typically around ~140 stamina.
+                </p>
+            </section>
+            <section class='potion' id='healing'>
+                <h2>4 | Healing</h2>
+                <p>Regenerates the drinker's health, and applies regeneration. Scales greatly with potency. Does not
+                    heal broken
+                    bones</p>
+            </section>
+            <section class='potion' id='harming'>
+                <h2>5 | Harming</h2>
+                <p>Creates an instant burst of damage around the flask when thrown. Does not linger. Damage highly
+                    comparable to an impact grenade</p>
+            </section>
+            <section class='potion' id='weakness'>
+                <h2>6 | Weakness</h2>
+                <p>Leaves a pool of liquid upon shattering that weakens enemy damage greatly (for an unknown length of
+                    time) (along with possibly reducing their defense?)</p>
+            </section>
+            <section class='potion' id='burning'>
+                <h2>7 | Burning</h2>
+                <p>Leaves a pool of liquid upon shattering that sets enemies on fire. Does not hurt allies
+                </p>
+            </section>
+            <section class='potion' id='steelskin'>
+                <h2>8 | Steelskin</h2>
+                <p>Untested.</p>
+            </section>
+            <section class='potion' id='goldsight'>
+                <h2>9 | Goldsight</h2>
+                <p>Temporarily marks items/objects/generators in a large radius with a yellow indicator when drank.</p>
+            </section>
+            <section class='potion' id='haste'>
+                <h2>10 | Haste</h2>
+                <p>Untested.</p>
+            </section>
+            <section class='potion' id='sparkle'>
+                <h2>11 | Sparkle</h2>
+                <p>Untested.</p>
+            </section>
+            <section class='potion' id='slowness'>
+                <h2>12 | Slowness</h2>
+                <p>Untested.</p>
+            </section>
+            <section class='potion' id='neutriliagen'>
+                <h2>13 | Neutriliagen</h2>
+                <p>Lowers your infection greatly upon drinking. (1:1 Potency to infection removed)</p>
+            </section>
+            <section class='potion' id='rage'>
+                <h2>14 | Rage</h2>
+                <p>Untested.</p>
+            </section>
+            <section class='potion' id='freezing'>
+                <h2>15 | Freezing</h2>
+                <p>Untested.</p>
+            </section>
+            <section class='potion' id='undying'>
+                <h2>16 | Undying</h2>
+                <p>Untested.</p>
+            </section>
+            <section class='potion' id='nullify'>
+                <h2>17 | Nullify</h2>
+                <p>it's throwable</p>
+            </section>
+            <section class='potion' id='silence'>
+                <h2>18 | Silence</h2>
+                <p>Untested.</p>
+            </section>
+        </div>
+        <div id='credits'>
+            <pre>
+        nothing here yet. direct questions to buni0 on discord
+        </pre>
+        </div>
+    </main>
+</body>
+
+</html>
