@@ -1,0 +1,27 @@
+Dartboard is a fun minigame website I (Fumeda) am making out of boredom. It is not meant to ever be fully completed,
+instead I would be constantly adding fun new things as I come up with ideas.
+
+todo:
+c- gamemodes
+c- border around screen when clicking succesfully/failing
+c- proper end-screen
+c- proper start-screen
+c- more stats
+c- click cooldown
+c- customization
+
+~-------~
+
+other ideas:
+c- random chaos modifiers
+o-- flashbang
+o-- party mode (random tint on screen)
+o-- spin dartboard
+o-- scale entire window
+o-- some kind of blocker that reduces points when clicked (wet trout)
+
+c- dev mode
+c- music
+c- point system based on time, clicks, modifier usage
+c- add php to record scores to database (if logged or something)
+c- leaderboard on end-screen

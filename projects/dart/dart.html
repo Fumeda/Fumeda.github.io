@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>darcik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id='dartdiv'>
+            <img id='dartboard' src="dartboard.png" usemap="#dart-map" height="500" width="500">
+            <map name="dart-map">
+                <area onclick="blat('bull')" alt="bullseye" title="bullseye" coords="250,250,9" shape="circle">
+                <area onclick="blat('center')" alt="center" title="center" coords="250,250,18" shape="circle">
+                <area onclick="blat(20, 't')" title="triple20" coords="233,144,266,144,268,133,231,133,233,144"
+                    shape="poly">
+                <area onclick="blat(20, 'd')" title="double20" coords="222,74,277,74,279,63,220,63,222,74" shape="poly">
+                <area onclick="blat(20)" alt="20" title="20" coords="247,231,253,232,279,64,249,61,221,63" shape="poly">
+                <area onclick="blat(19)" alt="19" title="19" coords="241,268,163,419,187,428,221,435,247,269"
+                    shape="poly">
+                <area onclick="blat(18)" alt="18" title="18" coords="258,233,263,237,383,116,360,95,337,82"
+                    shape="poly">
+                <area onclick="blat(17)" alt="17" title="17" coords="252,269,258,266,335,418,308,431,279,436"
+                    shape="poly">
+                <area onclick="blat(16)" alt="16" title="16" coords="232,258,237,265,116,382,95,359,81,335"
+                    shape="poly">
+                <area onclick="blat(15)" alt="15" title="15" coords="266,257,262,263,384,384,404,361,418,335"
+                    shape="poly">
+                <area onclick="blat(14)" alt="14" title="14" coords="231,246,233,240,82,164,69,191,62,220" shape="poly">
+                <area onclick="blat(13)" alt="13" title="13" coords="270,247,266,240,420,164,430,191,437,221"
+                    shape="poly">
+                <area onclick="blat(12)" alt="12" title="12" coords="240,232,236,236,116,115,139,96,164,82"
+                    shape="poly">
+                <area onclick="blat(11)" alt="11" title="11" coords="231,253,232,247,63,221,60,250,63,280" shape="poly">
+                <area onclick="blat(10)" alt="10" title="10" coords="267,258,267,253,437,279,430,309,419,335"
+                    shape="poly">
+                <area onclick="blat(9)" alt="9" title="9" coords="233,242,236,236,118,116,96,136,81,164" shape="poly">
+                <area onclick="blat(8)" alt="8" title="8" coords="230,253,233,259,81,335,68,307,62,280" shape="poly">
+                <area onclick="blat(7)" alt="7" title="7" coords="237,265,243,267,164,418,136,403,115,384" shape="poly">
+                <area onclick="blat(6)" alt="6" title="6" coords="268,253,268,247,437,221,439,246,437,278" shape="poly">
+                <area onclick="blat(5)" alt="5" title="5" coords="240,232,246,231,220,62,188,71,164,80" shape="poly">
+                <area onclick="blat(4)" alt="4" title="4" coords="266,240,263,235,384,116,401,136,419,164" shape="poly">
+                <area onclick="blat(3)" alt="3" title="3" coords="247,269,253,269,279,436,248,439,221,436" shape="poly">
+                <area onclick="blat(2)" alt="2" title="2" coords="260,267,264,264,383,384,363,404,335,418" shape="poly">
+                <area onclick="blat(1)" alt="1" title="1" coords="253,231,259,233,338,79,306,69,279,63" shape="poly">
+        </div>
+        <div id='flash'>
+        </div>
+    </main>
+    <footer>
+        <h2 id='timer'>0s</h2>
+        <h2 id='dartPosition'>x:0 y:0</h2>
+        <h2 id='windowSize'>x:0 y:0</h2>
+        <h2 id='score'>Score: </h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--ideas-->
+<!--flashbang-->
+<!---->
+<!---->
+<!---->
