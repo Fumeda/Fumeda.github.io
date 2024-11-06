@@ -58,6 +58,24 @@ div.image-block {
   height: fit-content;
 }
 
+/* div#weather-overlay{
+  width: 100%;
+  height: 100%;
+  background-image: url(rain.png);
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  animation: weatherEffect 2.5s linear infinite;
+}
+
+@keyframes weatherEffect{
+from{
+  background-position: 0 0;
+}
+to{
+  background-position: 100% 100%;
+}
+} */
+
 hblock {
   border: 4px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(50, 100, 220, 0.6);
@@ -65,7 +83,8 @@ hblock {
   margin: 0px 2px;
   padding: 4px 8px;
 }
-/* update dark mode styles for every element if i have the time */
+
+/* update dark mode style if i have the time */
 .dark-mode {
   background-color: black;
   color: white;
