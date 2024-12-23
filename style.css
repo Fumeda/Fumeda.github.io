@@ -18,16 +18,16 @@ header {
 }
 
 main {
-  width: calc(80% - 60px);
+  width: calc(80% - 60px); /*adjust for aside paddings*/
+  height: calc(115vh - 40px); /*adjust for padding*/
   float: left;
   text-align: left;
-  padding: 20px;
+  padding:20px;;
 }
 
 aside {
   width: 10%;
-  min-height: 90vh;
-  height: fit-content;
+  min-height: 115vh;
   padding-left: 5px;
   padding-right: 5px;
   overflow-wrap: anywhere;
@@ -108,10 +108,10 @@ td {
   padding: 2px;
 }
 
-p{
-  padding:6px;
+p {
+  padding: 6px;
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 0px 0px 255px 0px;
+  width: fit-content;
 }
 
 a {
@@ -119,8 +119,8 @@ a {
   color: black;
 }
 
-a.dark-mode{
-  color:white;
+a.dark-mode {
+  color: white;
 }
 
 a.cl {
